@@ -22,7 +22,7 @@ jobs:
 
       - name: Copy files to EC2
         run: |
-          scp -r ./html-site/* ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }}:/tmp/site
+          scp -r ./myweb_website.html/* ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }}:/tmp/site
 
       - name: Deploy to NGINX root
         run: |
